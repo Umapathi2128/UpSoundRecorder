@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="listAdapterData"
+                  type="com.uma.upsoundrecorder.ui.listrecordings.ListFragmentModel"/>
+    </data>
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/imgList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_record2"
+                    android:background="@drawable/bg_img"
+                    android:layout_margin="@dimen/dp10"
+          />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+            >
+                <TextView
+                        android:id="@+id/txtListTitle"
+                        style="@style/audioListStyle"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="@{listAdapterData.title}"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/tertiary_text_light"
+                        android:layout_marginBottom="@dimen/dp5"
+                        app:layout_constraintLeft_toLeftOf="parent"/>
+                <TextView
+                        android:id="@+id/txtListDuration"
+                        style="@style/audioListStyle"
+                        android:text="@{listAdapterData.duration}"
+
+                />
+                <TextView
+                        android:id="@+id/txtListDate"
+                        style="@style/audioListStyle"
+                        android:text="@{listAdapterData.time}"
+
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

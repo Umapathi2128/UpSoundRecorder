@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">UpSoundRecorder</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="options">Options</string>
+    <string name="renameFile">Rename file</string>
+    <string name="share">Share file</string>
+    <string name="delete">Delete file</string>
+    <string name="cancel">Cancel</string>
+    <string name="rename">Rename</string>
+    <string name="newFileName">New File name</string>
+    <string name="tap_button">Tap the button to start recording</string>
+    <string name="reording">Recording....</string>
+</resources>
